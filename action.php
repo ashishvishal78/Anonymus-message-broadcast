@@ -3,7 +3,7 @@
     $ids=$_REQUEST["id"];
     $id=(int)$ids;
 
-    $servername = "";
+	$servername = "";
 	$username = "";
 	$password = "";
 	$dbname = "";
@@ -13,7 +13,8 @@
 	  die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO messages (message,senderid) VALUES ('$msg',$id)";
+	$fil_msg=mysqli_real_escape_string($conn,htmlspecialchars($msg));
+	$sql = "INSERT INTO messages (message,senderid) VALUES ('".$fil_msg."',$id)";
 
 	if ($conn->query($sql) === TRUE) 
 	{
@@ -63,5 +64,5 @@
 		echo "0 results";
 	}
 	$conn->close();
-    echo $msg;
+    // echo $msg;
 ?>

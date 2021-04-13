@@ -49,33 +49,31 @@
     $cnt=1;
     if ($result->num_rows > 0) {
         $finxor=0;
-        // echo "<p>" .$result->num_rows. "</p>";
         while($row = $result->fetch_assoc()) {
 
-            // $num=(int)$row
-            echo "<p> USERID: " .$row['id'] ." Announced Xor: " . $row['flipxor'] ."</p>";
+            $num=$row['flipxor'];
             if($row['id']==$lastsendid)
             {
                 $finxor=$finxor^(($row['flipxor']+1)%2);
+                $num=($num+1)%2;
             }
             else
             $finxor=$finxor^$row['flipxor'];
+
+            echo "<p> USERID: " .$row['id'] ." Announced Xor: " . $num ."</p>";
+
+
+            
             if($cnt==$result->num_rows)
             {
                 echo "*";
                 if($finxor==1)
-                echo "<p> Last Message was send by the member of this group :" .$finxor."</p>";
+                echo "<p> Last Message was send by member of this group:" .$finxor."</p>";
                 else
-                echo "<p> Last Message was send by NSA :" .$finxor. "</p>";
+                echo "<p> Last Message was send by NSA:" .$finxor. "</p>";
             }
             $cnt++;
         }
-        // echo $finxor;
-        // if($finxor==1)
-        // echo "<p> Last Message was send by the member of this group :" .$finxor."</p>";
-        // else
-        // echo "<p> Last Message was send by NSA :" .$finxor. "</p>";
-
     }
 
 
