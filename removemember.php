@@ -1,8 +1,8 @@
 <?php 
-	$servername = "";
-	$username = "";
-	$password = "";
-	$dbname = "";
+	 $servername = "";
+	 $username = "";
+	 $password = "";
+	 $dbname = "";
 
     $q = ($_REQUEST["q"]);
     $int_cast = (int)$q;

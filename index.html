@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styleb.css">
 	<title>Anonymous Message Broadcast</title>
 	<script type="text/javascript" src="script.js"></script>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -11,17 +11,12 @@
 	<header>
 		<h1 id="title">ANONYMUS MESSAGE BROADCAST</h1>
 		<input type="hidden" id="uname" name="usr" value="">
-	</header>
-	
-	<section>
-		<div class="col-5-3 col message" id="area">
-				<h2>Start your chat here</h2>
-				<ul>
-					<li><p>Here is the information you have submitted:</p></li>
-				</ul>
-		</div><!--
-		--><div class="col-5-2 col", id="profile">
-			<h1 id="show_uname"></h1>
+	</header><!--
+	--><section>
+		<button class="openbtn" onclick="openNav()"><p class="link">Message Details</p></button>
+		<div class="col-5-2 col sidepanel", id="profile">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+			<h1 id="show_uname">USERID: 55</h1>
 			<p id="is_member">You are not a member of this group</p>
 
 			<details>
@@ -29,45 +24,45 @@
 					Announced Xor of group members:
 				</summary>
 				<div id="annxor">
-
 				</div>
 			</details>
-			<!-- <ul>
-				<li><p>Number of people in chat: </p></li>
-				<li><p>Your toss id: </p></li>
-				<li><p>Your right neighbour Toss: </p></li>
-				<li><p> Xor of both toss :</p></li>
-				<li><p> Send Xor: </p></li>
-			</ul> -->
 
 			<button class="btn" onclick="addmember(document.getElementById('uname').value)">
-				<p>join group</p>
+				join
 			</button>
 
 			<button class="btn" onclick="removemember(document.getElementById('uname').value)">
-				<p>Leave group</p>
+				Leave
 			</button>
-			
-
 		</div>
-	</section>
-
-
-	<footer id="footer">
-	   <p class="txr">
+		<!--
+		--><div class="col-5-3 col">
+				<div class="message" id="area">
+					<h2>Start your chat here</h2>
+					<ul>
+						<li><p>Here is the informatHere is the information you have submitted:</p></li>
+						<li><p>Here is the information you have submitted:</p></li>
+					</ul>
+				</div>
+			</div>
+	</section><!--
+	--><footer id="footer">
+	   <div class="txr">
 		   <textarea name="message" id="message" cols="45" rows="3" spellcheck="false"></textarea>
-	   </p>
-	   <p class="txr1">
-	   	<button class="btn" onclick="sen_msg(document.getElementById('message').value,document.getElementById('uname').value)">
-			<p>Send message</p>
-		</button>
-	   </p>
+	   </div>
+	   <div class="txr1">
+	   		<div class="central">
+	   			<button class="nbtn" onclick="sen_msg(document.getElementById('message').value,document.getElementById('uname').value)">
+						<p>SEND</p>
+				</button>
+			</div>
+	   </div>
 	</footer>
 
 <!-- changes -->
 	<script>
 		start_un();
-		setInterval(function(){ recur(); }, 1000);
+		setInterval(function(){ recur(); }, 500);
 
 
 		function recur(){

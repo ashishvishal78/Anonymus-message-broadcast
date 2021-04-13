@@ -1,0 +1,536 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+
+/*
+  ========================================
+  body
+  ========================================
+*/
+
+
+body{
+  margin:0 auto;
+  background: #FFF;
+  height: 100vh;
+  /*font-size: 5em;*/
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+@media screen and (min-width:600px){
+
+.openbtn,.closebtn{
+    display: none;
+  }
+  #is_member{
+    color:#fff;
+  }
+  /*==================================
+    HEADER
+    ===================================*/
+  header{
+    height:10%;
+    background: #000;
+  }
+  #title{
+    margin: auto;
+    font-size: 250%;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    padding:2%;
+  }
+
+  #show_uname{
+    margin: auto;
+    font-size: 250%;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    padding:2%;
+  }
+  /*==================================
+    section
+    ===================================*/
+
+  h2{
+    margin:3%;
+    font-size: 3vw;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  #area,#profile{
+    /* overflow: scroll; */
+    overflow-y: scroll;
+      /* overflow-anchor: none; */
+
+  }
+  ul{
+    list-style-type: square;
+    color: red;
+  }
+
+  section{
+    height: 80%;
+  }
+  .col-5-1{
+    height: 100%;
+    width: 20%;
+  }
+  .col-5-2{
+    padding:5%; 
+    width: 40%;
+    height: 100%;
+    background: #000;
+    float: right;
+  }
+  .col-5-3{
+    height: 100%;
+    width: 60%;
+  }
+  .col-5-4{
+    height: 100%;
+    width: 80%;
+  }
+
+  .col{
+    display: inline-block;
+  }
+  p{
+    line-height: 25px;
+  }
+  .message p{
+    color: #000;
+    margin: 1% 4%;
+  }
+  .message{
+    height: 100%;
+    /* text-overflow: hidden; */
+  }
+  details{
+    margin-top: 10px;
+    color: #00ff00;
+    font-size: 25px;
+    background-color: #140d62;
+  }
+  #annxor p{
+    font-size: 20px;
+    color: #00ff00;
+    background-color:#0000ff;
+    text-indent:5%;
+  }
+  /*
+    ========================================
+    Buttons
+    ========================================
+  */
+
+  .btn{
+    width:10vw;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing:0.5px;
+    text-transform: uppercase;
+    padding: 1vw;
+    margin: 2vw 1vw;
+  }
+  .btn p{
+    color: #000;
+  }
+
+  .btn:hover{
+    background: grey;
+    color: #648880;
+  }
+  /*bottom botton*/
+  .nbtn{
+    text-align: center;
+    /*margin-left:2%;*/
+    cursor: pointer;
+    height: 100%;
+    width: 80%;
+  }
+  .nbtn:hover{
+    background: grey;
+    color: #648880;
+  }
+
+
+  /*======================================
+    Footer
+    ====================================
+  */
+  footer{
+    height: 10%;
+    background: #000;
+    width: 100%;
+      /*overflow: hidden;*/
+  }
+  .txr{
+    /*height: 40px;
+    margin: 2%;*/
+    height: 100%;
+    width: 80%;
+    display: inline-block; 
+  }
+  .txr1{
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+    float: right;
+  }
+  textarea{
+    height: 70%;
+    margin: 1%;
+    width: 90%;
+    display: inline-block;
+  }
+  .central{
+    height: 70%;
+    margin: 4% 0;
+    width: 90%;
+    margin-right: 0;
+    font-size: 22px;
+  }
+
+  form{
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px){
+
+  /*==================================
+    HEADER
+    ===================================*/
+  header{
+    height:15%;
+    background: #000;
+  }
+  #title{
+    margin: 0 auto;
+    font-size: 6vw;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    padding:2%;
+    padding-top: 5%;
+  }
+
+  #show_uname{
+    /* margin: auto; */
+    font-size: 5vw;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    padding:2%;
+  }
+  /*==================================
+    section
+    ===================================*/
+
+  h2{
+    margin:3%;
+    font-size: 4vw;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  #area,#profile{
+    overflow-y: scroll;
+      /* overflow-anchor: none;
+      overflow-x: hidden; */
+  }
+  ul{
+    list-style-type: square;
+    color: red;
+  }
+
+  section{
+    height: 70%;
+  }
+  /*.col-5-2{
+    height: 20%;
+    background: grey;
+  }*/
+  .openbtn{
+    height: 10%;
+  }
+  .col-5-3{
+    height: 90%;
+    width: 100%;
+  }
+
+  .col{
+    display: inline-block;
+  }
+  p{
+    font-size:4vw; 
+    /*color:#fff;*/
+    /*line-height: 25px;*/
+  }
+  .message p{
+    color: #000;
+    margin: 1% 4%;
+  }
+  .message{
+    height: 100%;
+    /* text-overflow: hidden; */
+  }
+  details{
+    margin-top: 10px;
+    color: #00ff00;
+    font-size: 4vw;
+    background-color: #140d62;
+  }
+  #annxor p{
+    font-size: 4vw;
+    color: #00ff00;
+    background-color:#0000ff;
+    text-indent:5%;
+  }
+  /*
+    ========================================
+    Buttons
+    ========================================
+  */
+
+  .btn{
+    width:20vw;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    /*display: inline-block;*/
+    font-weight: 400;
+    letter-spacing:0.5px;
+    text-transform: uppercase;
+    padding: 1vw;
+    margin: 5vw;
+    margin-bottom: 0;
+
+  }
+  .btn p{
+    color: #000;
+  }
+
+  .btn:hover{
+    background: grey;
+    color: #648880;
+  }
+
+  /*======================================
+    Footer
+    ====================================
+  */
+  footer{
+    height: 15%;
+    background: #000;
+    width: 100%;
+      /*overflow: hidden;*/
+  }
+  
+  .txr{
+    /*height: 40px;
+    margin: 2%;*/
+    height: 100%;
+    width: 78%;
+    display: inline-block; 
+  }
+  .txr1{
+    height: 100%;
+    width: 22%;
+    display: inline-block;
+    float: right;
+  }
+  textarea{
+    height: 80%;
+    margin: 3% 0;
+    margin-left: 3%;
+    width: 95%;
+    display: inline-block;
+  }
+  .central{
+    height: 80%;
+    /*margin: 3%;*/
+    width: 100%;
+    margin: 10% 0; 
+  }
+  form{
+    height: 100%;
+  }
+
+  /*sidepanel*/
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 70%;
+    /*position: relative;*/
+    /*top: 0;*/
+    left: 0;
+    background-color: #111;
+    /*overflow-x: hidden;*/
+    transition: 0.5s;
+    /*padding-top: 60px;*/
+    overflow: scroll;
+      /*overflow-anchor: none;*/
+  }
+
+  .sidepanel a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #b3b6c2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .openbtn:hover {
+    background-color:#444;
+  }
+
+
+  /*bottom botton*/
+  .nbtn{
+    cursor: pointer;
+    text-align: center;
+    /*margin-left:2%;*/
+    height: 100%;
+    width: 80%;
+  }
+  .nbtn:hover{
+    background: grey;
+    color: #648880;
+  }
+
+  /*link*/
+  .link{
+    text-decoration: underline;
+    color: blue;
+  }
+
+}
